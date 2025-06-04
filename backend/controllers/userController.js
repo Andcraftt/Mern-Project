@@ -13,6 +13,13 @@ const loginUser = asyncHandler(async (req, res) => {
     res.json({ message: 'Login User'})
 })
 
+//Get your user
 const getMe = asyncHandler(async (req, res) => {
     res.json({ message: 'User data display'})
 })
+
+module.exports = {
+    registerUser,
+    loginUser,
+    getMe
+}
