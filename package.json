@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
-    "client": "npm --prefix frontend run dev"
+    "client": "npm --prefix frontend run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +21,8 @@
     "mongoose": "^8.15.1",
     "react-icons": "^5.5.0",
     "vite": "^6.3.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
   }
 }
