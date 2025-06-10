@@ -23,7 +23,7 @@ export default function Register() {
 
     const onSubmit = async (e) => {
         e.preventDefault()
-    }
+    } 
 
     return <>
         <section className='heading'>
