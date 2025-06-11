@@ -4,6 +4,7 @@ import {useSelector, useDispatch} from 'react-redux'
 import { useNavigate } from 'react-router-dom';
 import {toast} from 'react-toastify'
 import {register, reset} from '../features/auth/authSlice'
+import Spinner from '../components/spinner'
 
 export default function Register() {
     const[formData, setFormData] = useState({
@@ -57,6 +58,10 @@ export default function Register() {
             dispatch(register(userData))
         }
     } 
+
+    if(isLoading){
+        return <Spinner />
+    }
 
     return <>
         <section className='heading'>
