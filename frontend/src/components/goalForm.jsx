@@ -11,7 +11,7 @@ function GoalForm() {
         e.preventDefault()
 
         dispatch(createGoal({text}))
-        setText('s')
+        setText('')
     }
 
     return <section className='form'>
