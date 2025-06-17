@@ -9,6 +9,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
+        '@reduxjs/toolkit',
         'react-icons',
         'react-icons/fa',
         'react-icons/fa6',
