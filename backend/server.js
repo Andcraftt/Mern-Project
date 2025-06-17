@@ -11,7 +11,7 @@ connectDB()
 const app = express()
 
 app.use(cors({
-    origin: 'http://localhost:3000', // URL de tu frontend
+    origin: 'https://mern-project-4o0d.onrender.com', // URL de tu frontend
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
