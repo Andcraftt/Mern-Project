@@ -9,8 +9,14 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
-        '@reduxjs/toolkit',
+        'react-icons',
+        'react-icons/fa',
+        'react-icons/fa6',
+        /^react-icons\/.*/, // This covers all react-icons subpaths
       ],
     },
+  },
+  optimizeDeps: {
+    include: ['react-icons'], // This helps with development builds
   },
 });
