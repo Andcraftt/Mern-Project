@@ -8,7 +8,10 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['@reduxjs/toolkit'], 
+      external: ['@reduxjs/toolkit', 
+              'react-icons/fa6',   
+        'react-icons',     
+        ],  
     },
   },
 });
