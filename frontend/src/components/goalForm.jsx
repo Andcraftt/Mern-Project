@@ -12,6 +12,7 @@ function GoalForm() {
 
         dispatch(createGoal({text}))
         setText('')
+        window.location.reload() 
     }
 
     return <section className='form'>
