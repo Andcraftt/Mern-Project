@@ -1,5 +1,4 @@
 import {createSlice, createAsyncThunk} from '@reduxjs/toolkit'
-import { FaGlasses } from 'react-icons/fa6'
 import goalService from './goalService'
 
 const initialState = {
