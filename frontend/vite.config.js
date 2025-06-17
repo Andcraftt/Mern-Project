@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-
 export default defineConfig({
   plugins: [react()],
   server: {
@@ -10,9 +9,10 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
-        '@reduxjs/toolkit',   // Si aún lo necesitas
-        'react-icons/fa6',    // Añade esto
-        'react-icons',        // Opcional: para cubrir otros imports
+        '@reduxjs/toolkit',
+        'react-icons/fa',    // Add this
+        'react-icons/fa6',   // And this if you use both
+        'react-icons'        // Base package
       ],
     },
   },

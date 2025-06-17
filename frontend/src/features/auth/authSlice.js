@@ -1,5 +1,4 @@
 import {createSlice, createAsyncThunk} from '@reduxjs/toolkit'
-import { FaGlasses } from 'react-icons/fa6'
 import authService from './authService'
 
 //Get the user from the local 
